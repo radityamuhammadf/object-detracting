@@ -32,7 +32,7 @@ def main():
         text_scale=0.5
     )
     # iterating each frame that tracked using "model.track" method
-    for result in model.track(source=1,show=False,stream=True):
+    for result in model.track(source="test.mp4",show=False,stream=True):
         # set frame variable using the original image (orig_img attribute) from method output
         frame=result.orig_img
         # call YOLOv8 for image detection
